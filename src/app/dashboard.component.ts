@@ -16,6 +16,6 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.taskService.getTasks()
-      .then(tasks => this.tasks = tasks.slice(Math.max(tasks.length - 4, 1));
+      .then(tasks => this.tasks = tasks.slice(Math.max(tasks.length - 4, 1)));
   }
 }
