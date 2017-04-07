@@ -1,0 +1,16 @@
+<div *ngIf="task">
+  <h2>{{task.name}} Details:</h2>
+  <div>
+    <label>Title: </label>
+    <input [(ngModel)]="task.name" placeholder="name" />
+  </div>
+  <div>
+    <label>Owner: </label>
+    <input [(ngModel)]="task.owner" placeholder="owner" />
+  </div>
+  <div>
+    <label>Due: </label>
+    <input [(ngModel)]="task.dueDate" placeholder="dueDate" />
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>
